@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FRAME · Valla publicitaria con QR</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav><div class="w"><img data-i="logoW" alt="FRAME"><div class="links" id="links"></div><button class="btn" id="th" aria-label="Cambiar tema">☾</button></div><div id="bar"></div></nav>
+
+<section id="inicio"><div class="w hero">
+ <div>
+  <div class="kick">Diseño de productos innovadores de comunicación visual</div>
+  <h1>Una valla que <span class="gt">se escanea</span></h1>
+  <p class="lead" style="margin-bottom:26px">Propuesta del Instituto FRAME para la feria de carreras técnicas: una valla publicitaria de gran formato con un QR gigante que conecta la calle con el portal digital. <b>Imagina · Crea · Trasciende.</b></p>
+  <button class="btn" onclick="document.getElementById('valla').scrollIntoView()">Ver la valla ↓</button>
+  <div class="stats">
+   <div><b data-n="25" data-s="/25">0</b><span>puntaje de la idea</span></div>
+   <div><b data-n="20">0</b><span>jóvenes encuestados</span></div>
+   <div><b data-n="70" data-s="%">0</b><span>escanearía un QR</span></div>
+   <div><b data-n="3" data-s=" s">0</b><span>para leer el mensaje</span></div>
+  </div>
+ </div>
+ <div class="stage" id="stage"></div>
+</div></section>
+<div class="tick"><div id="tk"></div></div>
+
+<section id="ficha"><div class="w">
+ <div class="kick rv">Datos y etapa 1</div><h2 class="rv">Definición del <span class="gt">producto</span></h2>
+ <p class="lead rv">Situación: muchos estudiantes de secundaria conocen poco las especialidades técnicas que ofrece el instituto. Reto: ¿cómo diseñar un producto de comunicación visual innovador, atractivo y profesional que motive a conocer la feria?</p>
+ <div class="ficha rv"><div class="list" id="fl"></div><div class="card pane" id="fp"></div></div>
+ <div class="dg rv" id="dg"></div>
+</div></section>
+
+<section id="valla"><div class="w">
+ <div class="kick rv">El producto</div><h2 class="rv">La valla <span class="gt">interactiva</span></h2>
+ <p class="lead rv">Toca los puntos para ver qué decisión de diseño hay detrás de cada elemento.</p>
+ <div class="vb rv"><img data-i="valla" alt="Valla publicitaria FRAME"><span id="hsx"></span></div>
+ <div class="card info rv" id="hi"><h3>Elige un punto</h3><p>Cada marcador explica una decisión: jerarquía, color, tipografía, imágenes y llamado a la acción.</p></div>
+
+ <div class="sim rv"><div><h3>Prueba de lectura a distancia</h3><p class="lead" style="margin:8px 0 14px">Mueve el control para alejarte de la valla. Simulación ilustrativa: lo más importante debe seguir legible al final.</p>
+  <div class="sf"><img id="sm" data-i="valla" alt=""></div><input type="range" id="sr" min="5" max="100" value="10" aria-label="Distancia"></div>
+  <div><div class="lg" id="lg"></div></div></div>
+
+ <div class="demo rv"><div><h3>Del asfalto al celular</h3><p class="lead" style="margin:8px 0">Este es el QR de la valla. Pulsa para simular el escaneo y ver cómo sería la experiencia del joven. La pantalla es una maqueta: el portal real de la feria aún está por definir.</p>
+  <div class="qrbox" id="qb"><img data-i="qr" alt="Código QR de la valla"></div><button class="btn" id="sb">Escanear con el celular</button></div>
+  <div class="ph"><div class="scr" id="s1"><p style="text-align:center;color:#9aa6bd">Apunta al código QR…</p><div class="vf"><img data-i="qr" alt=""></div><p style="text-align:center" id="st">Esperando</p></div>
+   <div class="scr hide" id="s2"><img data-i="logoW" style="height:42px;margin-bottom:8px" alt=""><h3 style="font-size:1.9rem">Feria de <span class="gt">carreras</span></h3><p style="color:#9aa6bd;margin:4px 0 8px">Descubre tu camino creativo</p><div id="lc"></div><p style="font-size:.85rem;color:#9aa6bd;margin-top:10px">Lugar: campus principal · Fecha y hora: por definir</p><button class="btn" style="width:100%;margin-top:8px" onclick="toast('Demo: aquí iría el registro de asistentes')">Quiero asistir</button></div></div></div>
+</div></section>
+
+<section id="mercado"><div class="w">
+ <div class="kick rv">Etapa 2</div><h2 class="rv">Estudio de <span class="gt">mercado</span></h2>
+ <p class="lead rv">Tres referentes locales y una oportunidad clara: casi nadie combina gran formato urbano, diseño limpio y tecnología QR.</p>
+ <div class="refs rv" id="rf"></div>
+ <h3 style="margin:44px 0 14px" class="rv">Análisis comparativo</h3>
+ <div class="row rv" id="ct"></div><div class="cmp rv" id="cp"></div>
+ <div class="concl rv"><b>Oportunidad:</b> la publicidad exterior de otras instituciones suele ser recargada y difícil de leer en movimiento. FRAME propone una valla limpia, moderna y de alto impacto, con un QR gigante como puente directo hacia la plataforma digital de la feria.</div>
+</div></section>
+
+<section id="ideas"><div class="w">
+ <div class="kick rv">Etapa 3</div><h2 class="rv">Brainstorming y <span class="gt">selección</span></h2>
+ <p class="lead rv">Seis ideas, una ganadora. Toca cada tarjeta para ver su ventaja y viabilidad.</p>
+ <div class="grid" id="bs"></div>
+ <h3 style="margin:48px 0 6px" class="rv">¿Por qué la valla? Puntaje por criterio</h3>
+ <div id="sc" class="rv"></div>
+ <div class="concl rv">Se seleccionó la <b>valla publicitaria de gran formato</b> con un código QR gigante y elementos troquelados en 3D (integra lo dinámico de la idea 2 y el QR de la idea 3).</div>
+</div></section>
+
+<section id="encuesta"><div class="w">
+ <div class="kick rv">Etapa 4</div><h2 class="rv">Investigación de <span class="gt">mercado</span></h2>
+ <p class="lead rv">Encuesta a 20 jóvenes del público objetivo (egresados de secundaria, aprox. 18 años).</p>
+ <div class="sv"><div class="card rv" id="sv"></div><div class="card rv" style="text-align:center"><div class="ring" id="rg"><div><span id="rn">0%</span></div></div><p style="margin:14px 0 0"><b>¿Escanearías un QR?</b><br><span style="color:var(--mut)">14 de 20 dijeron que sí</span></p></div></div>
+ <div class="grid rv" style="margin-top:22px"><div class="card"><h3>Qué aprendimos</h3><p>Prefieren el gran formato en la vía pública, un estilo moderno y tecnológico, y quieren saber sobre carreras y campo laboral.</p></div><div class="card"><h3>Qué cambiamos</h3><p>Un panel limpio y directo, con las carreras digitales y el QR gigante visibles a simple vista.</p></div><div class="card"><h3>Por investigar</h3><p>Avenidas o tramos con mayor flujo vehicular y peatonal para ubicar la valla.</p></div></div>
+</div></section>
+
+<section id="marca"><div class="w">
+ <div class="kick rv">Identidad</div><h2 class="rv">Del boceto al <span class="gt">isologo</span></h2>
+ <p class="lead rv">Marcos rectangulares en perspectiva que crecen de menor a mayor: profundidad, capas de software y tridimensionalidad. Tipografía Bahnschrift, blanco y negro para lo elegante, con acentos vibrantes en la valla.</p>
+ <div class="lv rv"><div><div class="big"><img id="bg" data-i="v4" alt=""></div></div>
+  <div><h3>Exploración cromática</h3><p style="color:var(--mut)">Probamos el isologo en distintas paletas antes de quedarnos con el blanco sobre oscuro.</p><div class="row" id="vt"></div>
+  <h3 style="margin-top:26px">Bocetos a mano</h3><div class="skt" id="sk"></div></div></div>
+ <div class="gal rv" style="margin-top:36px" id="bd"></div>
+</div></section>
+
+<section id="diseno"><div class="w">
+ <div class="kick rv">Diseño final</div><h2 class="rv">Control de <span class="gt">calidad</span></h2>
+ <p class="lead rv">Diseño ganador: el número 1. Verifica cada punto del control (o todos a la vez).</p>
+ <div class="row rv"><button class="btn" id="ca">Verificar todo</button><span id="cn" style="align-self:center;color:var(--mut)">0 de 10</span></div>
+ <div class="ck rv" id="ck"></div>
+ <h3 style="margin:56px 0 14px" class="rv">La valla en su entorno</h3>
+ <div class="row rv" id="mf"></div><div class="gal" id="mg"></div>
+</div></section>
+
+<section id="sistema"><div class="w">
+ <div class="kick rv">Sistema de marca</div><h2 class="rv">FRAME más allá de la <span class="gt">valla</span></h2>
+ <p class="lead rv">La misma identidad aplicada a piezas de promoción, papelería, merchandising y espacios del instituto.</p>
+ <div class="row rv" id="af"></div><div class="gal" id="ag"></div>
+</div></section>
+
+<section id="carreras"><div class="w">
+ <div class="kick rv">Oferta</div><h2 class="rv">Lo que la valla <span class="gt">promociona</span></h2>
+ <p class="lead rv">Carreras con alta demanda laboral en el sector digital y creativo.</p>
+ <div class="carr rv" id="cr"></div>
+</div></section>
+
+<section id="cierre"><div class="w">
+ <div class="kick rv">Presentación</div><h2 class="rv">Justificación y <span class="gt">medición</span></h2>
+ <div class="ac rv" id="ac" style="margin:30px 0 50px"></div>
+ <h3 class="rv">¿Cómo sabremos si funcionó?</h3>
+ <div class="grid rv" style="margin-top:16px"><div class="card"><div class="kp">01</div><b>Escaneos del QR</b><p style="color:var(--mut)">Con un enlace rastreable (Google Analytics / landings).</p></div><div class="card"><div class="kp">02</div><b>Tráfico web</b><p style="color:var(--mut)">Visitas hacia la plataforma de la feria.</p></div><div class="card"><div class="kp">03</div><b>Registro de asistentes</b><p style="color:var(--mut)">Inscritos y asistentes durante el evento.</p></div></div>
+</div></section>
+
+<footer><img data-i="logoW" alt="FRAME"><p class="cond" style="font-size:1.6rem;color:var(--ink)">Imagina · Crea · Trasciende</p><p>SENATI Río Negro · Diseño Gráfico Digital · Seminario · Sección 34PGDTS601 · 29/10/2026<br>Jheferson Espinal Caseres · Matias Mendoza Garro · Milagros Ore · Jessica Rivas Tueroconsa<br>Instructor: Luis Alberto Utos Ceras</p></footer>
+
+<div class="lb" id="lb"><button style="left:14px" id="lp">‹</button><div><img id="li" alt=""><p id="lc2"></p></div><button style="right:14px" id="ln">›</button></div>
+<div class="toast" id="ts"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
